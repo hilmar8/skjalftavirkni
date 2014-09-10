@@ -47,7 +47,6 @@ for week in weeks:
             o['m'] = m
             o['breidd'] = breidd
             o['lengd'] = lengd
-            o['sDags'] = dags + ' ' + timi
             o['dypi'] = dypi
 
             q.append(o)
@@ -57,3 +56,5 @@ for week in weeks:
 
 with open('app/data.json', 'w') as f:
     f.write(json.dumps(q))
+
+print u"Vinnslu lokið"
