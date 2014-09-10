@@ -1,0 +1,11 @@
+{
+  "name": "jardskjalfti",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.1",
+    "modernizr": "~2.8.2",
+    "openlayers": "https://github.com/openlayers/ol3/releases/download/v3.0.0/v3.0.0.zip",
+    "moment": "~2.8.3",
+    "jquery.ui": "~1.11.1"
+  }
+}

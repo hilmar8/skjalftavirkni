@@ -1,0 +1,81 @@
+body {
+  background: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+html, body, #map {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#git-wrapper {
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  width: 30px;
+  background: #FFF;
+  padding: 10px;
+}
+
+#slider-wrapper {
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  width: 525px;
+  background: #FFF;
+  padding: 10px;
+}
+
+#slider-range {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media all and (min-width: 320px) and (max-width: 780px) {
+  #slider-wrapper {
+    width: 300px;
+  }
+
+  #slider-range {
+    width: 280px;
+  }
+}
+
+.ui-slider-horizontal {
+  height: 8px;
+  width: 200px;
+}
+.ui-slider .ui-slider-handle {
+  height: 15px;
+  width: 5px;
+  padding-left: 5px;
+}
+
+#canvas {
+  z-index: 1;
+  position:absolute;
+  left:0px;
+  top:0px;
+  pointer-events:none;
+}
+
+.browsehappy {
+  background: #fff;
+  color: #000;
+  padding: 23px 10px;
+
+  width: 500px;
+  height: 50px;
+
+  z-index: 2;
+  position:absolute;
+  left:50%;
+  top:50%;
+
+  margin-top: -25px;
+  margin-left: -250px;
+}
