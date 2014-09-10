@@ -15,9 +15,9 @@ var map = new ol.Map({
     })
   ],
   view: new ol.View({
-    // Byrja yfir vatnajökli, zoomað út.
-    center: ol.proj.transform([-16.0, 64.30], 'EPSG:4326', 'EPSG:3857'),
-    zoom: 7
+    // Byrja yfir íslandi, zoomað út.
+    center: ol.proj.transform([-18.0, 64.8], 'EPSG:4326', 'EPSG:3857'),
+    zoom: 8
   })
 });
 
@@ -93,6 +93,7 @@ map.on('moveend', function() {
   canvas.height = map.getSize()[1];
   $('#slider-wrapper').css('top', map.getSize()[1] - 75);
   $('#git-wrapper').css('left', map.getSize()[0] - 50);
+  $('#info-wrapper').css('top', map.getSize()[1] - 40);
   res = map.getView().getResolution();
 });
 
