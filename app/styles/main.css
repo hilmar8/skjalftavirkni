@@ -47,11 +47,16 @@ html, body, #map {
 
 @media all and (min-width: 320px) and (max-width: 780px) {
   #slider-wrapper {
-    width: 300px;
+    width: 250px;
   }
 
   #slider-range {
-    width: 280px;
+    width: 230px;
+  }
+
+  .hidden_phone {
+    visibility: hidden;
+    display: none;
   }
 }
 
