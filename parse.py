@@ -4,8 +4,9 @@ import json
 
 from datetime import datetime
 
+epoch = datetime.strptime('20140814 000000.000', '%Y%m%d %H%M%S.%f')
+
 def unix_time(dt):
-    epoch = datetime.strptime('20140804 000000.000', '%Y%m%d %H%M%S.%f')
     delta = dt - epoch
     return delta.total_seconds()
 
@@ -15,7 +16,7 @@ def unix_time_millis(dt):
 
 q = []
 
-weeks = ['vika32', 'vika33', 'vika34', 'vika35']
+weeks = ['vika33', 'vika34', 'vika35', 'vika36', 'vika37', 'vika38']
 
 for week in weeks:
     with open(week + '.txt', 'r') as f:
@@ -49,7 +50,8 @@ for week in weeks:
             o['lengd'] = lengd
             o['dypi'] = dypi
 
-            q.append(o)
+            if o['dags'] >= 0:
+                q.append(o)
 
             if verify != line.replace('\n', ''):
                 print u'Úbs, lína passar ekki'

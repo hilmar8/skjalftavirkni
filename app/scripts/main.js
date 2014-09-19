@@ -37,8 +37,8 @@ var requestAnimationFrame = window.requestAnimationFrame ||
 
 // Stillum núllpunktinn þar sem atburðinir byrja sem einhverja
 // dagsetningu í millisekúndum. Í þessu tilfelli er sú dagsetning
-// 4. ágúst 2014.
-var EPOCH = 1407110400000;
+// 14. ágúst 2014.
+var EPOCH = 1407974400000;
 
 // Smá hakk ef það er verið að nota IE10.
 var IE10 = false;
@@ -221,7 +221,7 @@ function mainLoop() {
 
     // Stækkum um 6 mínutur og 40 sekúndur í hverri ítrun af lykkjunni.
     if (currentTime < endofTime) {
-      currentTime += 400000;
+      currentTime += 500000;
     }
   }
 
